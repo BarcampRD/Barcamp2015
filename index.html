@@ -17,7 +17,8 @@
 
     </head><!--/head-->
 
-    <body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <body data-spy="scroll" data-target="#navbar" data-offset="0" >
+        <div class="container">
         <header id="header" role="banner">
             <div class="container">
                 <div id="navbar" class="navbar navbar-default">
@@ -46,56 +47,29 @@
             </div>
         </header><!--/#header-->
         <section id="home"> 
-            <div class="carousel center" data-ride="carousel">
-                <div class="carousel-inner" style="background-color:#ededed">
+                <div class="carousel-inner">
                     <div class="item active">
                         <img class="img-responsive" src="images/slider/bg1.png" alt="slider">                       
                         <div class="carousel-caption">
                             <h2 class="text-primary">28 DE NOVIEMBRE DE 2015</h2>
-                            <h4 class="text-info">Edificio Padre Arroyo, Pontificia Universidad Católica Madre y Maestra</h4>
+                            <h4 class="text-info">Pontificia Universidad Católica Madre y Maestra campus Santiago</h4>
                             <h1><a href="#participa">Participa <i class="fa fa-angle-right"></i></a></h1>
                         </div>
                     </div>              
-                </div>
-            </div>      
+                </div>   
         </section>
         <!--/#home-->
 
         <section id="explore">
             <div class="container">
-                <div class="row">
                     <div class="watch">
                         <img class="img-responsive" src="images/watch.png" alt="">
-                    </div>              
-                    <div class="col-md-4 col-md-offset-2 col-sm-5">
-                        <h2>A tan solo</h2>
-                    </div>              
-                    <div class="col-sm-7 col-md-6">                 
-                        <ul id="countdown">
-                            <li>                    
-                                <span class="days time-font">00</span>
-                                <p>d&iacute;as </p>
-                            </li>
-                            <li>
-                                <span class="hours time-font">00</span>
-                                <p class="">horas </p>
-                            </li>
-                            <li>
-                                <span class="minutes time-font">00</span>
-                                <p class="">minutos</p>
-                            </li>
-                            <li>
-                                <span class="seconds time-font">00</span>
-                                <p class="">segundos</p>
-                            </li>               
-                        </ul>
                     </div>
                 </div>
-            </div>
         </section><!--/#explore-->
 
-        <section id="acercaDe">
-            <div class="about-content">
+        <section id="acercaDe" style="background-color: #D32229; color: #fff">
+            <div class="about-content" id="acercaDiv" >
                 <h2>Acerca del barcamp</h2>
                 <div class="col-sm-4">
                     <h3>¿Qué es barcamp?</h3>
@@ -109,33 +83,30 @@
                 </div>
                 <div class="col-sm-4">
                     <h3>¿Cuándo?</h3>
-                    <p>BarCamp RD 2014 será celebrado en el campus de Santiago de la Pontificia Universidad Catolica Madre y Maestra, el sábado 29 de noviembre del 2014, desde las 09:00 A.M hasta las 6:00 P.M.</p>
+                    <p>BarCamp RD 2015 será celebrado en el campus de Santiago de la Pontificia Universidad Catolica Madre y Maestra, el sábado 28 de noviembre del 2015, desde las 09:00 A.M hasta las 6:00 P.M.</p>
                 </div>
             </div>
-        </section><!--/#about-->
-
-        <section id="event">
-            <div align="center" class="event-content" style="float: left">
+            <div align="center" class="event-content" style="background-color: #D32229;">
                 <h1>Informaci&oacute;n del evento en 2013</h1>
                 <div class="col-sm-4">
                     <div class="single-event">
-                        <img class="img-responsive" src="images/event/charlas.png" alt="event-image">
-                        <h2>23</h2><h4>Desconferencias</h4>
+                        <span class="glyphicon glyphicon-user" style="font-size: 10em"></span>
+                        <h2>250+</h2><h4>Personas</h4>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="single-event">
-                        <img class="img-responsive" src="images/event/participantes.png" alt="event-image">
-                        <h2>250+</h2><h4>Personas</h4>
+                        <span class="glyphicon glyphicon-comment" style="font-size: 10em"></span>
+                        <h2>23</h2><h4>Desconferencias</h4>
                     </div>
                 </div>
             </div>
             <div align="center" class="event-button event-content">
-                <a href="http://2013.barcamp.org.do" target="_blank" class="btn btn-primary"><i class="fa fa-external-link"></i>  Ir al sitio 2013</a>  
+                <a href="http://2014.barcamp.org.do" target="_blank" class="btn btn-primary"><i class="fa fa-external-link"></i>  Ir al sitio 2014</a>  
             </div>
         </section><!--/#event-->
         
-        <section id="sesiones">
+        <section id="sesiones" style="background-color: #fff">
             <div class="about-content" style="padding-bottom: 5%;padding-top: 3%">
                 <h1 style="text-decoration: underline" align="center">  Sesiones  </h1><br><br>
                 <!-- Primer bloque de charlistas -->
@@ -759,7 +730,7 @@
                 </div>
             </div>
         </footer><!--/#footer-->
-
+        </div>
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.isotope.min.js"></script>

@@ -47,6 +47,49 @@ a:focus {
   height: 80px;
   z-index: 99999;
 }
+
+#home {
+    background-color: #fff;
+}
+
+#explore{
+    background-color: #0479BD;
+}
+
+#charlistas{
+    background-color: #0479BD;
+}
+
+#participa {
+    background-color: #D32229;
+}
+
+#ubicacion{
+    background-color: #0479BD;
+}
+
+#contact{
+    background-color: #D32229;
+}
+
+#sponsor{
+    background-color: #fff;
+}
+
+.about-content {
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#acercaDe .h1,
+#acercaDe .h2,
+#acercaDe .h3
+{
+    margin-top: 0px;
+    color: #fff;
+}
+
 #main-slider {
   background-image: url(../images/slider-bg.jpg);
   background-attachment: fixed;
