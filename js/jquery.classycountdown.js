@@ -20,7 +20,7 @@
             labels: true,
             labelsOptions: {
                 lang: {
-                    days: 'Dias',
+                    days: 'D&iacute;as',
                     hours: 'Horas',
                     minutes: 'Minutos',
                     seconds: 'Segundos'
