@@ -58,11 +58,11 @@ jQuery(function($) {
 (function(){
 
 	var map;
-
+//19.443714, -70.679580
 	map = new GMaps({
 		el: '#gmap',
-		lat: 19.443176,
-		lng: -70.682557,
+		lat: 19.443714,
+		lng: -70.679580,
 		scrollwheel:false,
 		zoom: 16,
 		zoomControl : false,
@@ -75,8 +75,8 @@ jQuery(function($) {
 
 	var image = 'images/map-icon2.png';
 	map.addMarker({
-		lat: 19.442476,
-		lng: -70.680457,
+		lat: 19.443714,
+		lng: -70.679580,
 		title: "Auditorio Ciencias de la Salud",
 		icon: image,
 		animation: google.maps.Animation.DROP,
