@@ -68,6 +68,16 @@ a:focus {
     background-color: #0479BD;
 }
 
+/*************************
+******Map CSS****
+**************************/
+#map {
+    position: relative;
+}
+
+#gmap {
+    height:450px;  
+}
 #contact{
     background-color: #D32229;
 }
