@@ -6,6 +6,8 @@
         <meta name="description" content="">
         <meta name="author" content="CISC">
         <title>Barcamp Santiago 2015, Rep&uacute;blica Dominicana</title>
+        <link href="css/jquery.classycountdown.css" rel="stylesheet" type="text/css">
+        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/font-awesome.min.css" rel="stylesheet">
         <link href="css/prettyPhoto.css" rel="stylesheet">
@@ -62,8 +64,37 @@
 
         <section id="explore">
             <div class="container">
-                    <div class="watch">
-                        <img class="img-responsive" src="images/watch.png" alt="">
+                <div class="watch">
+                    <div class="container">
+                        <div id="countdown1"></div>
+                    </div>
+                        <script src="js/jquery.js"></script>
+                        <script src="js/jquery.knob.js"></script>
+                        <script src="js/jquery.throttle.js"></script>
+
+                        <script src="js/jquery.classycountdown.js"></script>
+                        <script>
+                            $(document).ready(function() {
+                               
+                                $('#countdown1').ClassyCountdown({
+                                    theme: "white",
+                                    end: $.now() + 106600
+                                });                                                                            
+                            });
+                        </script><script type="text/javascript">
+
+                          var _gaq = _gaq || [];
+                          _gaq.push(['_setAccount', 'UA-36251023-1']);
+                          _gaq.push(['_setDomainName', 'jqueryscript.net']);
+                          _gaq.push(['_trackPageview']);
+
+                          (function() {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                          })();
+
+                        </script>
                     </div>
                 </div>
         </section><!--/#explore-->
@@ -191,7 +222,6 @@
             </div>
         </footer><!--/#footer-->
         </div>
-        <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.isotope.min.js"></script>
         <script src="js/jquery.prettyPhoto.js"></script>
