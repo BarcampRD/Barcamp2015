@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #777;
+  color: #fff;
   font-weight: 300;
 }
 a {
@@ -537,10 +537,11 @@ a:focus {
   margin-left: 1px;
 }
 .navbar-default .navbar-nav > li > a {
-  padding: 30px 25px;
+  padding: 30px 15px;
   font-size: 16px;
   line-height: 18px;
   color: #FFF;
+  text-transform: uppercase;
 }
 .navbar-default .navbar-nav > li > a > i {    
   display: inline-block;
@@ -636,6 +637,23 @@ ul.social > li > a i {
 textarea#message {
   padding: 10px 15px;
   height: 220px;
+}
+#acercaDe{
+   background-color: #ed6d5c;
+    color: black;
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding-bottom: 2%;
+
+    font-size: 1em;
+    line-height: 1.25em;
+    text-align: justify;
+}
+#espacioVertical{
+  padding-bottom: 15px;
+  text-decoration: underline;
+  color: white;
 }
 @keyframes scaleUp {
   0% {
