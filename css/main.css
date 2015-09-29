@@ -640,7 +640,8 @@ textarea#message {
 }
 #acercaDe{
    background-color: #ed6d5c;
-    color: black;
+   padding-top: 2%; 
+   color: black;
     position: relative;
     width: 100%;
     display: flex;
