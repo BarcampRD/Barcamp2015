@@ -62,10 +62,20 @@ a:focus {
 
 #participa {
     background-color: #D32229;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#event {
+    padding-bottom: 2%;
 }
 
 #ubicacion{
     background-color: #0479BD;
+}
+
+#contact {
+    padding-bottom: 2%;
 }
 
 /*************************
@@ -80,6 +90,7 @@ a:focus {
 }
 #contact{
     background-color: #D32229;
+    padding-top: 2%;
 }
 
 #sponsor{
