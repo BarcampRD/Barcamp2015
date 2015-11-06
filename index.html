@@ -1,181 +1,360 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="">
-        <meta name="author" content="CISC">
-        <title>Barcamp Santiago 2015, Rep&uacute;blica Dominicana</title>
-        <link href="css/jquery.classycountdown.css" rel="stylesheet" type="text/css">
-        <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, maximum-scale=1">
+        <title>Barcamp Santiago 2015, Rep&uacute;blica Dominicana</title>        
+        <link href="css/jquery.classycountdown.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css"> 
         <link href="css/font-awesome.min.css" rel="stylesheet">
-        <link href="css/prettyPhoto.css" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <script src="js/respond.min.js"></script>
+            <script src="js/respond-1.1.0.min.js"></script>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/html5element.js"></script>
         <![endif]-->
 
-    </head><!--/head-->
+    </head>
+    <body>
 
-    <body data-spy="scroll" data-target="#navbar" data-offset="0" >
-        <div class="container">
-        <header id="header" role="banner">
+        <!--Header_section-->
+        <header id="header_wrapper">
             <div class="container">
-                <div id="navbar" class="navbar navbar-default">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"></a>                      
-                    </div>
-                    <div class="collapse navbar-collapse">
-                         <ul class="nav navbar-nav">
-                             <li class="active"><a href="#home"><i class="icon-home"></i></a></li>
+                <div class="header_box">
+                    <div class="logo"><a href="#"><img src="img/logo.png" alt="logo" height="100"></a></div> 
+                    <nav class="navbar navbar-inverse" role="navigation">
+                        <div class="navbar-header">
+                            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                        </div>
+                        <div id="main-nav" class="collapse navbar-collapse navStyle">
+                            <ul class="nav navbar-nav" id="mainNav">
+                                <li class="active"><a href="#home"><i class="icon-home"></i></a></li>
                                 <li class="scroll"><a href="#acercaDe">Acerca De</a></li>
                                 <li class="scroll"><a href="#sesiones">Sesiones</a></li>
-                                <li class="scroll"><a href="#charlistas">Charlistas</a></li>
-                                <li class="scroll"><a href="#participa">Participa</a></li>
+                                <li class="scroll"><a href="#charlistas">Charlas</a></li>                           
                                 <li class="scroll"><a href="#sponsor">Patrocinadores</a></li>
                                 <li class="scroll"><a href="#ubicacion">Ubicaci&oacute;n</a></li>
+                                <li class="scroll"><a href="#contacto">Contactanos</a></li>
                             </ul>
-
-                    </div>
-                </div>
-            </div>
-        </header><!--/#header-->
-        <section id="home"> 
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img class="img-responsive" src="images/slider/bg1.png" alt="slider">                       
-                        <div class="carousel-caption">
-                            <h2 class="text-primary">28 DE NOVIEMBRE DE 2015</h2>
-                            <h4 class="text-info">Pontificia Universidad Católica Madre y Maestra campus Santiago</h4>
-                            <h1><a href="#participa"><b>Participa </b><i class="glyphicon glyphicon-link"></i></a></h1>
                         </div>
-                    </div>              
-                </div>   
-        </section>
-        <!--/#home-->
+                    </nav>
+                </div>
 
-        <section id="explore">
+            </div>
+        </header>
+        <!--Header_section--> 
+
+
+        <section id="hero_section" class="top_cont_outer">
+            <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_section">
+                        <div class="row">
+                            <div>
+                                <img src="img/barcamp.png" height="250" class="bannerImg zoomIn wow animated" alt="" />
+                            </div>
+                            <div class="">
+                                <div class="top_left_cont zoomIn wow animated"> 
+                                    <h2>28 DE NOVIEMBRE DE 2015</h2>
+                                    <h4 style="color:#fff">Pontificia Universidad Católica Madre y Maestra campus Santiago</h4>
+                                    <a href="https://www.eventbrite.com/e/barcamp-rd-2015-tickets-19092159162" class="read_more2">Inscribete Aqui</a> </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section  id="contador">
+            <div class="container">                   
+                <div class="top_left_cont zoomIn wow animated">
+                    <div class="h2 text-uppercase">
+                        <div id="countdown" style="font-size:40px;font-family: 'Michroma';color: #000;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section  id="acercaDe">
             <div class="container">
-                <div class="watch">
-                    <div class="container">
-                        <div id="countdown1"></div>
+                <h2>Acerca del Barcamp</h2>
+                <div class="service_wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">¿Qué es barcamp?</h3>
+
+                                <p class="animated fadeInDown wow">BarCamp es una red internacional de "desconferencias" tecnológicas, cuyo contenido es auto-generado por los participantes y su orientación es hacia el desarrollo de Software y tecnología en general.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+
+                                <h3 class="animated fadeInUp wow">¿Quién puede participar?</h3>
+
+                                <p class="animated fadeInDown wow">Cualquier desarrollador de software, profesores y estudiantes de distintas universidades pueden participar, ¡el único requerimiento es tener ganas de aprender más!</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">¿Cuándo?</h3>
+                                <p class="animated fadeInDown wow">BarCamp RD 2015 será celebrado en el campus de Santiago de la Pontificia Universidad Catolica Madre y Maestra, el sábado 28 de noviembre del 2015, desde las 09:00 A.M hasta las 6:00 P.M</p>
+                            </div>
+                        </div>
+
                     </div>
-                        <script src="js/jquery.js"></script>
-                        <script src="js/jquery.knob.js"></script>
-                        <script src="js/jquery.throttle.js"></script>
-
-                        <script src="js/jquery.classycountdown.js"></script>
-                        <script>
-                            $(document).ready(function() {
-                               
-                                $('#countdown1').ClassyCountdown({
-                                    theme: "white",
-                                    end: $.now() + 5106600
-                                });                                                                            
-                            });
-                        </script><script type="text/javascript">
-
-                          var _gaq = _gaq || [];
-                          _gaq.push(['_setAccount', 'UA-36251023-1']);
-                          _gaq.push(['_setDomainName', 'jqueryscript.net']);
-                          _gaq.push(['_trackPageview']);
-
-                          (function() {
-                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-                          })();
-
-                        </script>
-                    </div>
-                </div>
-        </section><!--/#explore-->
-
-        
-        <section id="acercaDe" style="background-color: #D32229">
-            <div class="about-content">
-                <div id="espacioVertical">    
-                    <center>
-                        <h2>Acerca del barcamp</h2>
-                    </center>
-                </div>
-
-            <div class="about-content" id="acercaDiv" >
-                <div class="col-sm-4" >
-                    <h3>¿Qué es barcamp?</h3> <br />
-                    <p>BarCamp es una red internacional de "desconferencias" tecnológicas, cuyo contenido es auto-generado por los participantes
-                        y su orientación es hacia el desarrollo de Software y tecnología en general.</p>
-                </div>
-
-                <div class="col-sm-4" style="border-left:1px solid #fff;height:150px">
-                    <h3>¿Quién puede participar?</h3><br />
-                    <p>Cualquier desarrollador de software interesado, personas de las diferentes universidad y público en general, el único requerimiento son ganas de aprender más!</p>
-
-                </div>
-                <div class="col-sm-4" style="border-left:1px solid #fff;height:150px">
-                    <h3>¿Cuándo?</h3><br />
-                    <p>BarCamp RD 2015 será celebrado en el campus de Santiago de la Pontificia Universidad Catolica Madre y Maestra, el sábado 28 de noviembre del 2015, desde las 09:00 A.M hasta las 6:00 P.M.</p>
                 </div>
             </div>
         </section>
-        
-        <section id="event" style="background-color: #D32229">
-            <div class="event-content" style="float: left">
-            <center>
-                <h1 style="padding-bottom: 2%">Informaci&oacute;n del evento en 2014</h1>
-                <div class="col-sm-2"></div>
-                <div class="col-sm-4">
-                    <div class="single-event">
-                        <img class="img-responsive" src="images/event/charlas-MetroR.png" alt="event-image">
-                        <h2>16</h2><h4>Desconferencias</h4>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="single-event">
-                        <img class="img-responsive" src="images/event/participantes-MetroR.png" alt="event-image">
-                        <h2>250+</h2><h4>Personas</h4>
+
+
+        <section id="event" class="top_cont_outer">
+            <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_section">
+                        <div class="row">                          
+                            <div class="">
+                                <div class="top_left_cont zoomIn wow animated"> 
+                                    <h2>Informaci&oacute;n del evento en 2014</h2>                                    
+                                    <a href="#contact" class="read_more2">Ir al sitio de 2014</a> </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div align="center" class="event-button event-content">
-                <a href="http://2014.barcamp.org.do" target="_blank" class="btn btn-primary"><i class="fa fa-external-link"></i>  Ir al sitio 2014</a>  
-            </div>
-        </section><!--/#event-->
-      
-        
-        <section id="participa" style="background-color: #fff; color: #0479BD">
-            <div id="twitter-feed" class="carousel slide" data-interval="false">
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3" style="float: left">
-                        <div class="carousel-inner center-block">
-                            <h1 class="text-center" style="color:#910000">Participa</h1>
-                            <br><div class="item active">
-                                <p>El espíritu de este BarCamp es que cada presentación esté acompañada de una sección práctica, donde cada participante pueda aplicar los conocimientos aprendidos. Además, pretendemos dar a conocer las más novedosas tendencias en la ingeniería de software, así como también, mostrar herramientas de software libre que nos ayudarán a ser más productivos.</p>
-                                <p>Estaremos recibiendo solicitudes hasta el 20 de octubre del 2015.</p>
-                                <br>
-                                <div class="btn-desconferencia" align="center">
-                                <a href="http://bit.ly/desconferencia-barcamp-2015" class="btn btn-primary" style="color:White;Background:#8A0808;border-color:#8A0808">
-+                        	<i class="fa fa-check-square"></i> Quiero ser desconferencista
-+                    		</a>
-                                </div>
+        </section>
+        <section  id="sesiones">
+            <div class="container">
+                <h2>Sesiones</h2>
+                <div class="service_wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Java 8 - Más allá de las Expresiones Lambda</h3>
+                                <strong class="text-info">Por: Eudris Cabrera</strong>
+                                <p class="animated fadeInDown wow">Java 8 es quizás el cambio más significativo en la historia del lenguaje, dado que incorpora varias novedades siguiendo la tendencia de otros lenguajes como la incorporación de lambdas o closures y una demandada nueva API para el manejo de fechas entre otras muchas características más.
+
+                                    En esta charla vamos a mostrar a los interesados las nuevas características que ofrece Java SE 8, haciendo énfasis en las funcionalidades de programación funcional y los nuevo APIs.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+
+                                <h3 class="animated fadeInUp wow">Tecnología como medio de transformación para el 2025</h3>
+                                <strong class="text-info">Por: Jose Elias</strong>
+                                <p class="animated fadeInDown wow">En esta charla identifico cuáles han sido las razones que han permitido que otras naciones se conviertan en superpotencia (por lo general son razones tecnológicas) mientras nos quedamos relegados a ""terce mundo"", y cuáles son las próximas olas tecnológicas que si nos subimos a ellas podemos convertirnos en una superpotencia de clase mundial a corto/mediano plazo.
+
+                                    En la charla además presento unos videos bastante interesantes demostrando los más asombrosos avances de los laboratorios más avanzados del mundo en términos de robótica, neurociencia, inteligencia artificial, tecnologías biónicas, etc.
+
+                                    La charla finaliza dando pautas muy específicas sobre qué hacer como nación para lograr los objetivos plantados.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">De Programador a Arquitecto</h3>
+                                <strong class="text-info">Por: Alexander Matos</strong>
+                                <p class="animated fadeInDown wow">Interesados en aprender lo que el papel de un arquitecto de software conlleva y por qué es tan crucial para el éxito de cualquier organización. 
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- SEGUNDA FILA-->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Debugging para el no iniciado: De Frustrado a competente</h3>
+                                <strong class="text-info">Por: Leonardo Jiménez</strong>
+                                <p class="animated fadeInDown wow">Debugging no es un arte aunque lo parezca, es una ciencia, en esta charla te daremos una serie de tecnicas y metodos para hacer tu debugging mas placentero.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+                                <strong class="text-info">Por: Ramón Emilio Ferreyra</strong>
+                                <h3 class="animated fadeInUp wow">Django 101: Backend ágil con Django web Framework</h3>
+
+                                <p class="animated fadeInDown wow">Desconferencia introductoria al desarrollo web con Django framework, enfocada a dar a conocer sus virtudes a la hora de crear aplicaciones web de alto nivel y desempeño.
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">OpenCV en C#</h3>
+                                <strong class="text-info">Por: David de la Hoz</strong>
+                                <p class="animated fadeInDown wow">El reconocimiento de imágenes es el futuro de la computación y por que no hablar de ella realizando algunas demostraciones de sus usos y lo fácil que puede ser implementada usando C# bajo EmguCV</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TERCERA FILA-->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">MongoDB con Estereoides</h3>
+                                <strong class="text-info">Por: Luis Contreras</strong>
+                                <p class="animated fadeInDown wow">Presentar base de Datos TokuMX y Percona Server para MongoDB y ver que ventajas tienen estas bases de datos sobre MongoDB, conoces caso puntuales en como pueden ser aplicados.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+
+                                <h3 class="animated fadeInUp wow">Big Data usando Postgres</h3>
+                                <strong class="text-info">Por: Edwin Quijada</strong>
+                                <p class="animated fadeInDown wow">Mostrar como poder usar PostgreSQL como RDBMS para el manejo e implementacion de Big Data.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">El Movimiento Maker: Una nueva cultura de Innovación</h3>
+                                <strong class="text-info">Por: Roniel Guzmán</strong>
+                                <p class="animated fadeInDown wow">Conoce como el Movimiento Maker ha impactado en el desarrollo de nuevas tecnologías, creando una ola de innovación en todo el mundo y ya está en República Dominicana. Hablaremos sobre los temas mas interesantes en el Movimiento, figuras que pertenecen a el, como comenzar a ser parte de este movimiento y explicar el Zero To Maker.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>      
-        </section><!--/#twitter-feed-->
-        
-   
+            </div>
+        </section>
 
+        <section  id="charlistas">
+            <div class="container">
+                <h2>Charlistas</h2>
+                <div class="service_wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Eudris Cabrera</h3>
+                                <img src="img/charlistas/1.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/eudriscabrera" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://facebook.com/eudris" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://github.com/ecabrerar" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-github"></i></a>
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">José Elias</h3>
+                                <img src="img/charlistas/2.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="http://twitter.com/eliax" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="http://facebook.com/eliax" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Alexander Matos</h3>
+                                <img src="img/charlistas/3.jpeg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/alex_sotam" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/amatosolivo" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-github"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- SEGUNDA FILA-->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Leonardo Jiménez</h3>
+                                <img src="img/charlistas/4.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/leonardoajim" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/xpostudio4" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-github"></i></a>
+                                    <a href="https://www.facebook.com/leonardoajim" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+
+                                <h3 class="animated fadeInUp wow">Ramón Emilio Ferreyra</h3>
+                                <img src="img/charlistas/5.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/Emilio_Ferreyra" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/emilioferreyra" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-github"></i></a>
+                                    <a href="https://www.facebook.com/emilioferreyra" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">David de la Hoz</h3>
+                                <img src="img/charlistas/6.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/DvDHoz" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://github.com/daviddelahoz" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-github"></i></a>
+                                    <a href="https://www.facebook.com/daviddelahoz" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TERCERA FILA-->
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Luis Contreras</h3>
+                                <img src="img/charlistas/7.jpeg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/doluiscontreras" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 borderLeft">
+                            <div class="service_block">
+
+                                <h3 class="animated fadeInUp wow">Edwin Quijada</h3>
+                                <img src="img/charlistas/8.jpg"  height="200"/>
+                                <div align="center">
+                                    <a href="https://twitter.com/ewquijada" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-twitter"></i></a>
+                                    <a href="https://www.facebook.com/quijada.edwin" target="_blank" style="color:#000;padding-left:25px;font-size: 30px"><i class="fa fa-facebook"></i></a>
+
+                                </div>
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 borderLeft">			
+                            <div class="service_block">
+                                <h3 class="animated fadeInUp wow">Roniel Guzmán</h3>
+                                <img src="img/charlistas/9.jpg"  height="200"/>
+                                
+                                <p class="animated fadeInDown wow"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="ubicacion">
             <div id="map">
                 <div id="gmap-wrap">
@@ -185,66 +364,72 @@
             </div><!--/#map-->  
         </section>
 
-        <section id="contact">
-            <div class="contact-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4" align="center">
-                            <h2>Lugar</h2>
-                            <h4 style="color:#fff">Auditorio Ciencias de la Salud<br>
-                                Pontificia Universidad Católica Madre <br>y Maestra
-                            </h4>
-                        </div>
-                        <div align="center" class="col-sm-4">
-                            <h2 style="color:white;font-size:30px">EN LA WEB</h2><br>
-                            <div align="center">
-                                <a href="https://twitter.com/BarCampRD" target="_blank" style="color:#fff"><i class="fa fa-twitter"></i></a>
-                                <a href="https://www.facebook.com/barcamprd" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-facebook"></i></a>
-                                <a href="https://plus.google.com/109231528433843406120" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-google-plus"></i></a>
-                                <a href="https://github.com/BarcampRD/" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-github"></i></a>
-                            </div>
-                        </div>
-                        <div align="center" class="col-sm-4" style="float: left">
-                            <div id="contact-section">
-                                <h3>ENV&Iacute;ANOS TU OPINI&Oacute;N</h3>
-                                <div class="status alert alert-success" style="display: none"></div>
-                                <form id="main-contact-form" class="contact-form" name="contact-form" method="POST" action="sendemail.php">
-                                    <div class="form-group">
-                                        <input id="email" type="text" name="email" class="form-control" required="required" placeholder="Tu Correo">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Expresa tu opini&oacute;n"></textarea>
-                                    </div>                        
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-primary pull-right">Enviar</button>
-                                    </div>
-                                </form>        
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>      
-        </section>
-        <!--/#contact-->
-
-
-        <footer id="footer" style="background-color: #fff">
+        <footer class="footer_wrapper" id="contact">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        &copy; 2015 Todos los derechos reservados a CISC PUCMM
-                    </div>
-
-                </div>
+                <section id="contacto">
+                    <div class="contact-section">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-4" align="center">
+                                    <h2>Lugar</h2>
+                                    <h4 style="color:#fff">Auditorio Ciencias de la Salud<br>
+                                        Pontificia Universidad Católica Madre <br>y Maestra
+                                    </h4>
+                                </div>
+                                <div align="center" class="col-sm-4">
+                                    <h2 style="color:white;font-size:30px">EN LA WEB</h2><br>
+                                    <div align="center">
+                                        <a href="https://twitter.com/BarCampRD" target="_blank" style="color:#fff"><i class="fa fa-twitter"></i></a>
+                                        <a href="https://www.facebook.com/barcamprd" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://plus.google.com/109231528433843406120" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-google-plus"></i></a>
+                                        <a href="https://github.com/BarcampRD/" target="_blank" style="color:#fff;padding-left:25px"><i class="fa fa-github"></i></a>
+                                    </div>
+                                </div>
+                                <div align="center" class="col-sm-4" style="float: left">
+                                    <div id="contact-section">
+                                        <h3>ENV&Iacute;ANOS TU OPINI&Oacute;N</h3>
+                                        <div class="status alert alert-success" style="display: none"></div>
+                                        <form id="main-contact-form" class="contact-form" name="contact-form" method="POST" action="sendemail.php">
+                                            <div class="form-group">
+                                                <input id="email" type="text" name="email" class="form-control" required="required" placeholder="Tu Correo">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Expresa tu opini&oacute;n"></textarea>
+                                            </div>                        
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-primary pull-right">Enviar</button>
+                                            </div>
+                                        </form>        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                </section>
             </div>
-        </footer><!--/#footer-->
-        </div>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.isotope.min.js"></script>
-        <script src="js/jquery.prettyPhoto.js"></script>
-        <script src="js/main.js"></script>
+            <div class="container">
+                <div class="footer_bottom"><span>Copyright © 2015 CISC PUCMM  </span> </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+        <script type="text/javascript" src="js/jquery.nav.js"></script> 
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.js"></script>
+        <script type="text/javascript" src="js/wow.js"></script> 
+        <script type="text/javascript" src="js/custom.js"></script>
+        <script type="text/javascript" src="js/countdown-timer.js"></script>
         <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <script src="js/gmaps.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>  
+        <script src="js/main.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script type="text/javascript">
+            $('#countdown').countdown('2015/11/28', function (event) {
+                $(this).html(event.strftime('%D Días para el evento'));
+            });
+        </script>
+
     </body>
 </html>
