@@ -1,0 +1,55 @@
+.memories-page .memories {
+	margin: 3em 0;
+}
+
+.memories-page .memories h1 {
+	text-align: center;
+}
+
+.memories-page .memories h2 {
+	text-align: center;
+	font-weight: 300;
+	max-width: 860px;
+	margin: 0 auto 2em auto;
+	font-size: 1em;
+	padding: 1em;
+}
+.memories-page .credit {
+	font-size: .8em;
+	text-transform: uppercase;
+	margin-top: 3em;
+}
+
+.memories-page .centerbutton {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.memories-page .memories h2 {
+		font-size: 1.5em;
+	}
+	.goodbye {
+		max-width: 50%;
+		margin: 0 auto;
+	}
+}
+
+
+.memories-page .buttons {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+	margin-bottom: 3em;
+}
+.memories-page h2.tighter {
+	margin-bottom: 0;
+}
+
+.memories-page h2.muchsmaller {
+	font-size: .8em;
+}
+
+.memories-row {
+    margin-bottom: 1em;
+    margin-top:  1em;
+}
